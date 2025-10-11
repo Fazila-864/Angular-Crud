@@ -1,0 +1,44 @@
+<div class="main-content">
+       <div class="form-container">
+        <div class="form-header">
+            <div class="form-image">
+                <i class="bi bi-hoodie"></i>
+            </div>
+            <h2>Edit the existing Hoodie</h2>
+            <p>Edit the details below to update the existing product of your store</p>
+        </div>
+        
+        <form (ngSubmit)="updateProd()">
+            <div class="form-floating mb-4 form-animation">
+                <input type="text" class="form-control" id="productName" placeholder="Product Name" name="name" [(ngModel)] = "product.name">
+                <label for="productName" class="animated-label">Product Name</label>
+                <i class="bi bi-tag form-icon"></i>
+            </div>
+            
+             <div class="form-floating mb-4 form-animation">
+                <input type="number" class="form-control" id="productPrice" placeholder="Product Price" name="price" [(ngModel)] = "product.price">
+                <label for="productPrice" class="animated-label">Product Price</label>
+                <i class="bi bi-currency-dollar form-icon"></i>
+             </div>
+            
+            <div class="form-floating mb-3 form-animation animation-delay-2">
+                <input class="form-control" id="productDescription" placeholder="Product Description" name="description" [(ngModel)] = "product.description">
+                <label for="productDescription" class="animated-label">Product Description</label>
+                <i class="bi bi-card-text form-icon"></i>
+            </div>
+            
+            <div class="description-counter animation-delay-2">
+                Maximum 500 characters
+            </div>
+            
+            <button type="submit" class="btn btn-brown form-animation animation-delay-3">
+                <i class="bi bi-plus-circle me-2"></i> Update Product
+            </button>
+        </form>
+        
+        <div class="form-footer form-animation animation-delay-3">
+            <p>HoodieHub Product Management System</p>
+        </div>
+    </div>
+</div>
+ 

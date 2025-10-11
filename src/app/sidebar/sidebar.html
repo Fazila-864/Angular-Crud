@@ -1,0 +1,33 @@
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>HoodieHub</h3>
+            <p>Admin Dashboard</p>
+        </div>
+        
+        <div class="sidebar-menu">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['/']" routerLinkActive="navActive" [routerLinkActiveOptions]="{exact:true}">
+                        <i class="bi bi-house-door"></i>
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/form']" routerLinkActive="navActive">
+                        <i class="bi bi-plus-circle"></i>
+                        <span class="menu-text">Add Product</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/list']" routerLinkActive="navActive">
+                        <i class="bi bi-list-ul"></i>
+                        <span class="menu-text">Product List</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+   

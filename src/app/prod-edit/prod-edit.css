@@ -1,0 +1,183 @@
+.main-content {
+            margin-left: 250px;
+            padding: 2rem;
+        }
+        .form-container {
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 2.5rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .form-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #5D4037;
+        }
+        
+        .form-header h2 {
+            color: #3E2723;
+            font-weight: 600;
+        }
+        
+        .form-header p {
+            color: #8D6E63;
+            margin-top: 0.5rem;
+        }
+        
+        .form-floating {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .form-floating label {
+            color: #5D4037;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 1rem 1rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: #f9f9f9;
+        }
+        
+        .form-control:focus {
+            border-color: #5D4037;
+            box-shadow: 0 0 0 0.25rem rgba(93, 64, 55, 0.25);
+            background-color: white;
+            transform: translateY(-2px);
+        }
+        
+        .form-control:focus + label {
+            color: #3E2723;
+            font-weight: 600;
+        }
+        
+        .animated-label {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-brown {
+            background-color: #5D4037;
+            border-color: #5D4037;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .btn-brown:hover {
+            background-color: #3E2723;
+            border-color: #3E2723;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(93, 64, 55, 0.3);
+        }
+        
+        .form-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #8D6E63;
+            transition: all 0.3s ease;
+        }
+        
+        .form-floating:focus-within .form-icon {
+            color: #5D4037;
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .price-input-container {
+            position: relative;
+        }
+        
+        .price-prefix {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #8D6E63;
+            font-weight: 500;
+            z-index: 5;
+        }
+        
+        .price-input {
+            padding-left: 30px !important;
+        }
+        
+        .form-animation {
+            animation: slideIn 0.6s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .animation-delay-1 {
+            animation-delay: 0.1s;
+        }
+        
+        .animation-delay-2 {
+            animation-delay: 0.2s;
+        }
+        
+        .animation-delay-3 {
+            animation-delay: 0.3s;
+        }
+        
+        .form-image {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .form-image i {
+            font-size: 4rem;
+            color: #5D4037;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .description-counter {
+            text-align: right;
+            font-size: 0.8rem;
+            color: #8D6E63;
+            margin-top: 0.5rem;
+        }
+        
+        .form-footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e0e0;
+            color: #8D6E63;
+            font-size: 0.9rem;
+        }
+        
+ @media (max-width: 768px) {
+            .main-content {
+                margin-left: 70px;
+            }
+         }
